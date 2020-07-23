@@ -13,11 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('register', 'API\RegisterController@register');
 Route::post('login', 'API\LoginController@login');
 Route::group(['middleware' => 'auth:api'], function(){
     Route::post('get-promotions', 'API\PromotionsController@getPromotionsList');
-    Route::get('get-promotions2', 'API\PromotionsController@getPromotionsList');
+    Route::post('get-promotion-by-id', 'API\PromotionsController@getPromotionById');
 });
 Route::fallback(function(){
     return response()->json([
