@@ -2,7 +2,7 @@
 
 Despues de clonar el repositorio
 
-Ejecutar comando: composer update
+*Ejecutar comando: composer update
 
 Crear esquema de Base de Datos (nombre recomendado: guatemala-apidb)
 
