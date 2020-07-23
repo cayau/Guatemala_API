@@ -1,22 +1,42 @@
-## Guatemala API
+# Guatemala API
+
+## Instalacion
+
+Porfavor revisar la guia de instalacion oficial de laravel para requerimientos de servidor, antes de iniciar. [Documentacion Oficial](https://laravel.com/docs/7.x/installation#installation)
 
 Despues de clonar el repositorio
+    
+    git clone git@github.com:cayau/Guatemala_API.git
 
-Ejecutar comando: composer update
+Para instalar las dependencia ejecutar comando
+    
+    composer update
 
-Crear esquema de Base de Datos (nombre recomendado: guatemala-apidb)
+Crear esquema de Base de Datos
+    
+    (nombre recomendado: guatemala-apidb)
 
 Configurar archivo .env (usando .env.example) con la informacion de la base de datos
+        
+    cp .env.example .env
 
-Ejecutar comando: php artisan migrate
+Coirrer migraciones de base de datos ejecutar comando
+    
+    php artisan migrate
 
-Ejecutar comando: php artisan passport:install
+Instalar passport para autenticacion ejecutar comando
+    
+    php artisan passport:install
 
-Ejecutar comando: php artisan key:generate
+Generar nueva llave de aplicacion ejecutar comando
+    
+    php artisan key:generate
 
-Para crear data dummy en la base de datos
-Ejecutar comando: php artisan db:seed
+Para crear data dummy en la base de datos ejecutar comando
+    
+    php artisan db:seed
 
 Para hacer login utilizar las credenciales:
-correo: ayau15@gmail.com
-contrasena: guatemala1234
+    
+    correo: ayau15@gmail.com
+    contrasena: guatemala1234
